@@ -1,0 +1,7 @@
+VX-REXX OS/2 V1.01 Build B1
+VRX: Window1.VRX
+VRXWindow: __VREMainWindow,1,747,434,4999,4938
+VRXWindow: __VRESectionListWindow,1,1662,48,7552,3216
+VRXWindow: __VREToolsWindow,1,747,5444,2941,1664
+UserFile: 1
+UserWindow: Window1,1

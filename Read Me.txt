@@ -1,0 +1,81 @@
+----------------------------------------------------
+                    PASVXMIX V0.9
+is a Mixer for the Pro Audio Spectrum 16 sound card.
+----------------------------------------------------
+          Programmed by Patrick Premont
+        e-mail : premontp@jsp.umontreal.ca
+----------------------------------------------------
+
+This program has been done in two days and is
+intended as a quick fix for the fact that the
+PAS mixer for PM doesn't allow you to save
+its settings. With PASVXMIX, you can load & save the
+settings and the savefiles are scripts that
+can configure the PAS. So one of these scripts is
+placed in your startup folder and configures
+the card at boot time without launching PASVXMIX.
+The program is rather slow however because it
+acts through the PAS.EXE command-line program.
+
+Installing it:
+--------------
+PASVXMIX requires the VX-REXX runtime library and
+PAS.EXE, a small command-line program to change the
+settings of the PAS 16.
+
+PAS.EXE can be retreived from ftp.cdrom.com
+in /pub/os2/2_x/mmedia/setpas16.zip
+
+PAS.EXE must placed in a directory which in your
+PATH so that the PAS command can be launched
+from anywhere. This in turn makes it possible
+to launch the scripts produced by PASVXMIX
+from anywhere. The scripts are the files
+used by PASVXMIX to save the volume levels and
+options. They include calls to the PAS command
+that configure the PAS-16 to the levels in that
+savefile so the can be launched without starting
+PASVXMIX.EXE.
+
+The VX-REXX runtime library is the file VROBJ.DLL
+which is included in the distribution of PASVXMIX.
+It must be placed in a directory which is in your
+LIBPATH. (Defined in your config.sys file)
+The current directory is a simple choice (it
+should be in your LIBPATH).
+
+If you want the boot settings to be set every
+time you boot, run "Install_boot_settings.cmd".
+
+Using it:
+---------
+I hope its use is obvious except for the
+following details.
+In PASVXMIX, the checkbox are use to disable
+level control. It is equivalent to setting the
+level to zero but allow a quick on/off toggle.
+The "Stereo Channels" setting selects the
+channel(s) which are the target of the level
+modifications made with the other controls.
+They are NOT on/off switches for channels.
+If you want to turn off the left Mic channel,
+select Left and then uncheck the Mic box.
+
+---------------------------------------------------
+               LEGAL CONSIDERATIONS
+---------------------------------------------------
+PASVXMIX is freeware. You may use and copy any part
+of the distribution except VROBJ.DLL which you
+can only use with PASVXMIX. This restriction is
+because Watcom gives me the right to redistribute
+VROBJ.DLL but it must be distibuted only as part of
+my program. I accept no legal responsabilty for the
+behavior of this program and must, in accordance
+with VROBJ.DLL's redistribution rights, indemnify, hold
+harmless and defend WATCOM and its suppliers (and
+myself by the way) from and against any claims or
+lawsuits, including attorney's fees, that arise or
+result from the use or distribution of PASVXMIX.
+---------------------------------------------------
+
+
